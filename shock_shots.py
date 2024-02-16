@@ -4,7 +4,7 @@ import math
 class ShockShot(pygame.sprite.Sprite):
     def __init__(self, spawn_x, spawn_y, direction, shot_speed, assets):
         pygame.sprite.Sprite.__init__(self)
-        self.image = assets.arrow_shot
+        self.image = assets.shock_shot
         self.image = pygame.transform.scale(self.image, (16 * 2, 16 * 2))
         self.initial_pos = pygame.Vector2(spawn_x, spawn_y)
         direction_vector = direction
